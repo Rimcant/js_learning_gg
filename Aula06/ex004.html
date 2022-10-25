@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ah e tal ... </title>
+  
+    <style> 
+
+        body {
+    background-color: hotpink;
+    color: floralwhite;
+    font: normal 35pt Arial; /* comentário em CSS */
+        }
+      /* p{font: normal 35pt Arial;}*/
+        h1{color: azure;}
+        p{color: gainsboro;}
+        
+        </style>
+    
+    
+    
+</head>
+
+<body>
+    <script>
+
+var nome = window.prompt ('diz-me o teu nome')
+document.writeln(`Olá sou o/a ${nome} e o meu nome tem ${nome.length} caracteres <br/>`) 
+
+
+document.writeln(`e vou usar esses ${nome.length} caracteres para fazer uma conta <br/>`)
+
+document.writeln (`o valor de ${nome.length} ao quadrado é ${nome.length*nome.length} <br/>`)
+
+document.writeln(`<br/><br/><br/>agora vou escrever o teu nome em negrito e letras maiusculas 
+<strong> ${nome.toLocaleUpperCase()} </strong> e normal em minusculas ${nome.toLocaleLowerCase()}<br/>`)
+
+document.write( `<br/><br/>vou adicionar 0.5 ao comprimento do teu nome. ` )
+var decimal = 0.5 
+
+var nomedecimal = decimal + nome.length
+
+document.write (`o teu nome com 0.5 é ${nomedecimal} <br/><br/><br/>`)
+document.write (`se eu quiser escrever o o teu nome com 2 casas
+ decimais tenho de usar o comando variavel.toFixed(numero de casas decimais) como vou ilustrar aqui: ->`)
+document.write( nomedecimal.toFixed(2))
+
+document.write(`<br/><br/>como é sabido em pt nao se usa . mas sim virgula, vou executar um comando para mudar . para ,   `)
+document.write (nomedecimal.toFixed(2).replace('.',','))
+
+
+document.write(`<br/><br/> nao ficamos por aqui vou 
+multiplicar o numero de letras do teu nome por 100 e somar 0.5 e colocar em formato de moeda 
+com este comando que se segue ` ) 
+
+
+//nomedecimal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}
+var numerodecimal1 = nome.length*100 + 0.5
+
+document.write(numerodecimal1.toLocaleString('pt-PT', { style: 'currency', currency: 'EUR' }))
+
+
+document.write (`<br/><br/>vou tentar fazert um programa para calcular a data`)
+var ano = prompt("em q ano nasceste?")
+        
+var today = new Date();
+var date = today.getFullYear();
+var idade = date - ano;
+
+document.write(`<br/><br/>A data de today é  -- ${today} -- <br/><br/>agora tenho de extrair a today o ano por isso uso o comando getfullyear e dá a variável date -- ${date} -- `)
+document.write (`<br/><br/> iiidade ${idade} `)
+        
+
+</script>
+</body>
+</html>

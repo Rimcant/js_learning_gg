@@ -1,0 +1,17 @@
+funtction comerPizza () {
+    comerfatia{}
+    comerfatia{}
+    comerfatia{}
+    comerfatia{}
+    comerfatia{}
+    comerfatia{}
+    comerfatia{}
+}
+
+laço principal 
+
+while(tem pizza?) {
+come fatia {}
+} 
+
+DO WHILE FOR

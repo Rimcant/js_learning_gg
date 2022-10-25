@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+  <style>
+body{
+background: rgb(226, 43, 159);
+font: normal 18pt arial;
+color: whitesmoke;
+    }
+head{
+    Font: normal 20pt gigi;
+    color: aliceblue;
+}
+
+
+  </style>  
+</head>
+<body>
+    <h1>iniciando estudos com <strong>DOM</strong> em JavaScript   </h1>
+    <p>aqui vai o resultado    </p>
+    <p>o que é DOM? <strong>D</strong>ocument <Strong>O</Strong>bject <Strong>M</Strong>odel </p>
+<p>Árvore DOM <br> window 
+    
+    <br> location - document - history <br>
+html <br>
+Head + Body <br>
+dentro de head meta title + dentro de body h1 p p div <br>
+dentro de um dos p tenho strong <br>
+
+<p>pode selecionar os elementos da arvore dom por <br>
+marca  - getElementByTagName() <br>
+id <br>
+por nome <br>
+por classe <br>
+por selector <br>
+</p>
+
+</p>
+
+    <div id = msg>clique em mim</div>
+
+<script>
+
+
+var p1 = window.document.getElementsByTagName('p') [0]
+window.document.write('no paragrafo 0 está escrito: ' + p1.innerText)
+p1.style.color = 'yellow'
+var corpo = window.document.body
+corpo.style.background = 'black'
+//var d = window.document.getElementById ('msg')
+//d.style.background = 'pink'
+
+var d = window.document.querySelector('div#msg') //tou a selecionar id por isso uso # -- se tivesse a selecionar por class usava o .
+d.style.color = 'pink'
+
+
+
+
+</script>
+
+
+</body>
+
+
+</html>

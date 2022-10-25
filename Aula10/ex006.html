@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+div#area {
+    font: Normal 30pt Arial;
+    background: black;
+    color: white;
+    width: 400px;
+    height: 400px;
+    line-height: 400px;
+text-align: center;
+
+
+}
+
+
+    </style>
+</head>
+<body>
+<!--    <div id="area"onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" >
+
+        interaja...
+
+
+ --> 
+    <div id="area" >
+
+        interaja...
+
+
+
+    </div>
+    
+
+    <p>
+        para disparar um evento é preciso uma funçao 
+        bloco <br>
+         
+ 
+        funçao açao (parametros) {        }
+<script>
+
+var a = window.document.getElementById('area')
+
+a.addEventListener('click', clicar)
+a.addEventListener('mouseenter', entrar)
+a.addEventListener('mouseout', sair)
+
+function clicar() {
+    
+    a.innerText = 'Clicou!'
+a.style.background = 'red'
+
+}
+
+    function entrar() {
+        a.innerText = 'Entrou!'
+    }
+
+    function sair() {
+a.innerText = 'saiu!'
+a.style.background = 'black'
+
+    }
+
+
+</script>
+
+    </p>
+</body>
+</html>

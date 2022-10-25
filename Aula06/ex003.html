@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oi Gata</title>
+    <style> 
+
+    body {
+background-color: hotpink;
+color: floralwhite;
+font: normal 35pt Gigi; /* comentário em CSS */
+    }
+    h1{color: azure;}
+    p{color: gainsboro;}
+    </style>
+</head>
+<body>
+    <h1>Olá, Carroline !</h1> <!-- isso é um comentário em html -->
+    <p>
+        é é, o que tu queres sei eu...
+
+    </p>
+
+    <script>
+//window.alert ('Minha linda') // dá alerta
+//window.confirm('Queres um beijo?') //janela com botao ok
+
+//var nome = window.prompt('o que é que tu queres?') //vai perguntar o que tu queres
+
+// window.alert ('o que tu queres é,' + nome + '?') //concatenaçao
+    
+/*window.alert ('vamos fazer contas')
+var n1 = number.parseint(window.prompt ('um número')) // string converte - parseint é numero interiro
+var n2 = number.parseint(window.prompt ('outro número')) // */ 
+
+var n1 = Number(window.prompt ('um número')) //number 
+var n2 = Number(window.prompt ('outro número')) //number 
+var s = n1 + n2
+
+
+// para converter string (n)  n.tostring()
+window.alert ('a soma dos 2 numeros é ' + s)
+//(number + number) para adiçao
+// string + string) concatenaçao
+
+var nome1 = (window.prompt ('chamas-te como?')) 
+var idade2 = (window.prompt ('mete a idade'))
+var local = (window.prompt ('local onde estás'))
+var gosto = (window.prompt('gostas de?'))
+window.alert ('Olá eu sou o/a ' + nome1 +  ' tenho '  + idade2 +  ' anos de idade, estou no/em ' + local +  ' e gosto de '+ gosto)
+// nao consegui assim: window.alert('Olá eu sou o/a '+ $nome1) // ' tenho '  ${idade2} ' anos de idade, estou no/em '${local}' e gosto de '${gosto})
+//se for masculino queria meter olá sou o, se for feminino olá sou a
+'Olá eu sou o/a ' + nome1 +  ' tenho '  + idade2 +  ' anos de idade, estou no/em ' + local +  ' e gosto de '+ gosto
+
+//s.length quantos caracteres string tem
+//s.touppercasa() tudo para maisculas
+//tolowercase () tudo para minusculas
+
+</script>
+</body>
+</html>

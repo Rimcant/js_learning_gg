@@ -1,0 +1,17 @@
+nova estrutura de repetiçao
+com variavel de controle
+
+hexagono irregular
+
+inicializaçao
+teste logico
+incremente
+
+
+primeira passagem . 
+inicializaçao e teste logico
+faz o bloco
+e depois qnd tá a regressar faz o incremento 
+
+for (inicio; teste; incr) {}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas</title>
+</head>
+<body>
+
+    <h1>Sistema de multas</h1>
+    velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h 
+    <input type="button" value="verificar" onclick="calcular()">
+<div id="res"> </div>
+<div id="res2"> </div>
+    <script>
+//var txtv = window.document.querySelector('input#txtvel')
+
+function calcular() {
+    var txtv = window.document.getElementById('txtvel')
+    var res = window.document.getElementById('res')
+    var vel = Number(txtv.value)
+    var res2 = window.document.getElementById('res2')
+    
+
+    if (vel<60) {
+        res.innerHTML = `<p>a tua velocidade atual é de <strong> ${vel} km/h </strong> </p>`
+        res.innerHTML +=`<p>conduz sempre com cinto de segurança! </p>`
+        res2.innerHTML = `<p>deixa-te ir devagarinho que vais bem</p>`
+
+    } else if (vel<120){
+        res.innerHTML = `<p>a tua velocidade atual é de <strong> ${vel} km/h </strong> </p>`
+        res2.innerHTML = `<p>cuidado nao ultrapasses os 120</p>`
+        res.innerHTML +=`<p>isto é outra linha que podia ter dicas!!! </p>`
+    } else {
+        res.innerHTML = `<p>a tua velocidade atual é de <strong> ${vel} km/h </strong> </p>`
+        
+        res2.innerHTML = `<p>já estragaste tudo!! conduz devagar!!!</p>`
+    }
+
+}
+
+  //res2.innerHTML = `v>120`
+       
+ //res2.innerHTML = `v<120`
+        
+    
+
+   
+    </script>
+    
+</body>
+</html>
